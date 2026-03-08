@@ -1,0 +1,146 @@
+Windows Server Enterprise Lab – Nexora
+
+📌 Project Overview
+
+This project demonstrates the design and implementation of a complete enterprise-grade infrastructure using Windows Server technologies.
+
+The lab simulates a real-world on-premises corporate environment where centralized identity management, network services, and enterprise administration are implemented using Active Directory and related services.
+
+The objective of this project is to showcase practical system administration skills including domain management, network service configuration, security policy enforcement, and enterprise infrastructure documentation.
+
+---
+
+🏢 Organization Profile
+
+Company Name: Nexora
+Domain Name: nexora.local
+Environment Type: On-Premises Enterprise Lab
+Virtualization Platform: VMware Workstation
+Operating System: Windows Server
+
+---
+
+🖥️ Virtual Machines & Roles
+
+Server Name| Primary Role
+DC01| Primary Domain Controller, DNS, DHCP
+DC02| Additional Domain Controller, DNS
+FS01| File Server
+WS01| Domain-Joined Client (Testing)
+
+---
+
+🌐 Network Information
+
+Network: 192.168.10.0/24
+
+Server| IP Address
+DC01| 192.168.10.10
+DC02| 192.168.10.20
+FS01| 192.168.10.30
+
+Client devices obtain IP addresses dynamically through DHCP.
+
+---
+
+🛠 Technologies Used
+
+- Windows Server
+- Active Directory Domain Services
+- DNS
+- DHCP
+- Group Policy
+- WSUS
+- Windows Server Backup
+- VMware Workstation
+
+---
+
+🧱 Infrastructure Architecture
+
+"Infrastructure Diagram" (Architecture/active-directory-infrastructure-diagram.png)
+
+The environment uses a multi-domain controller setup to ensure redundancy and directory replication between domain controllers.
+
+---
+
+📅 Project Implementation (Day 1 – Day 14)
+
+This project was implemented progressively across fourteen stages covering infrastructure deployment, service configuration, and enterprise validation.
+
+Day| Implementation
+Day 1| Initial Server Preparation
+Day 2| Active Directory Forest & Domain Creation
+Day 3| Additional Domain Controller Deployment
+Day 4| Organizational Units & User Management
+Day 5| Group Policy Configuration
+Day 6| DNS Configuration
+Day 7| File Server Deployment
+Day 8| Advanced File Services
+Day 9| DHCP Server Deployment
+Day 10| Backup & Recovery
+Day 11| FSMO Roles Management
+Day 12| Active Directory Sites & Services
+Day 13| WSUS Deployment
+Day 14| Final Enterprise Validation
+
+Detailed documentation for each stage is available in the project files.
+
+---
+
+📂 Repository Structure
+
+windows-server-enterprise-lab
+│
+├── README.md
+├── LAB-SUMMARY.md
+│
+├── Architecture
+│   └── active-directory-infrastructure-diagram.png
+│
+├── screenshots
+│   ├── day1
+│   ├── day2
+│   ├── day3
+│   ├── day4
+│   ├── day5
+│   ├── day6
+│   ├── day7
+│   ├── day8
+│   ├── day9
+│   ├── day10
+│   ├── day11
+│   ├── day12
+│   ├── day13
+│   └── day14
+│
+├── day1.md
+├── day2.md
+├── day3.md
+├── day4.md
+├── day5.md
+├── day6.md
+├── day7.md
+├── day8.md
+├── day9.md
+├── day10.md
+├── day11.md
+├── day12.md
+├── day13.md
+└── day14.md
+
+---
+
+📘 Lab Documentation
+
+For a full overview of the project including goals, infrastructure design, and lessons learned, see:
+
+LAB-SUMMARY.md
+
+---
+
+🎯 Project Outcome
+
+This lab demonstrates the deployment and management of a full Windows Server enterprise infrastructure including centralized authentication, network services, file sharing, update management, and system backup.
+
+The project highlights practical system administration skills required in real-world enterprise IT environments.
