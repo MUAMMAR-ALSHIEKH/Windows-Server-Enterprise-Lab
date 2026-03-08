@@ -1,0 +1,100 @@
+Day 10 - Network Drive Mapping and System Backup
+
+Overview
+
+In Day 10, two important infrastructure tasks were implemented and validated in the domain environment.
+First, network shared folders were mapped automatically for users to simplify access to company resources.
+Second, a full system backup of the Windows Server was performed using Windows Server Backup to ensure recovery capability in case of system failure.
+
+The goal of this day was to simulate real enterprise practices by combining user productivity improvements with system protection and disaster recovery preparation.
+
+Objectives
+
+Configure shared company folders for department access
+Map network drives automatically for domain users
+Validate that mapped drives appear correctly after user login
+Install and configure Windows Server Backup
+Perform a full system backup of the server
+Verify backup completion and backup status
+
+Tasks Completed
+
+1. Network Shared Folder Structure
+
+A central shared directory named "SHARES" was created on the server to store departmental folders.
+
+Inside the main shared directory, the following folders were created:
+
+HR
+IT
+
+Access permissions were assigned using Active Directory security groups to ensure that each department can only access its own resources.
+
+2. Network Drive Mapping
+
+Mapped network drives were configured so that users automatically see their department folders after logging in.
+
+The mapped drives included:
+
+HR shared folder for HR department users
+IT shared folder for IT department users
+Company shared directory available to all domain users
+
+This configuration simplifies access to company resources and removes the need for users to manually navigate network paths.
+
+3. Testing Drive Mapping
+
+Testing was performed using different domain user accounts:
+
+HR user
+IT user
+User that belongs to both HR and IT groups
+
+Results confirmed that:
+
+HR users could see the HR folder and company shared folder
+IT users could see the IT folder and company shared folder
+Users belonging to both groups could access both department folders
+
+This confirmed that permissions and drive mappings were working correctly.
+
+4. Installing Windows Server Backup
+
+The Windows Server Backup feature was installed on the server to enable system protection and recovery capabilities.
+
+This tool allows administrators to perform full system backups, including system state, configuration, and installed roles.
+
+5. Performing System Backup
+
+A manual backup was executed using the "Backup Once" option.
+
+Backup configuration included:
+
+Backup type: System state
+Backup destination: Dedicated NTFS volume
+Backup method: Local backup storage
+
+The backup process was initiated and monitored until completion.
+
+6. Backup Verification
+
+After completion, the backup status was verified inside the Windows Server Backup console.
+
+The system reported:
+
+Backup Status: Successful
+Backup Time: Completed successfully
+Backup Copies: 1 available
+
+This confirms that the server can be restored if a failure or data loss occurs.
+
+Verification Results
+
+Mapped drives appeared correctly for domain users
+Department permissions worked as expected
+Backup operation completed successfully
+Server backup is now available for recovery if required
+
+Status
+
+Day 10 Completed Successfully

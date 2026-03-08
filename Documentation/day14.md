@@ -1,0 +1,27 @@
+Day 14 – Final Enterprise Validation
+
+Overview
+
+The final stage of the project focused on validating the complete enterprise environment and ensuring that all configured services function correctly within the domain infrastructure.
+
+---
+
+Tasks Performed
+
+- Created 120 domain users distributed across departmental Organizational Units.
+- Validated Group Policy Object (GPO) enforcement across the environment.
+- Tested access permissions and potential conflicts between users and groups.
+- Performed environment health checks to verify overall system stability.
+- Completed the final documentation review for the project.
+
+---
+
+Result
+
+All configured services were verified successfully, confirming that the enterprise lab environment operates correctly and reflects a functional Windows Server domain infrastructure.
+
+Evidence
+
+Screenshots for the validation process are avilable in:
+
+Screenshot/day14/
